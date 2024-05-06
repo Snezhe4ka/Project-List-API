@@ -2,9 +2,13 @@ Project List API
 This is a simple Flask API for managing list of projects. It uses SQLAlchemy to interact with a SQLite database.
 Setup:
 Python 3.11.7
+
 Install the required packages flask, flask_sqlalchemy
+`pip install -r requirements.txt`
+
 Run the application:
-python app.py
+`python app.py`
+
 The application will be running on http://localhost:5001
 http://127.0.0.1:5001/projects
 
