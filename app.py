@@ -18,7 +18,7 @@ def index():
         db.session.bulk_save_objects(projects)
         db.session.commit()
     project_names = [project.name for project in Project.query.all()]
-    return "<h1>Highly prioritized projects (˘▾˘):</h1>\n<ul>" + '\n'.join('<li>◆ ' + name + ' ◆</li>' for name in project_names) + "</ul>"
+    return "<h1>Highly prioritized projects (˘▾˘) </h1>\n<h3><ul>" + '\n'.join('<li> ' + name + ' </li>' for name in project_names) + "</ul><h3>"
 
 
 @app.route('/updated', methods=['POST'])
